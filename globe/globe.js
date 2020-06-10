@@ -21,7 +21,7 @@ DAT.Globe = function(container, opts) {
     c.setHSL( ( 0.6 - ( x * 0.5 ) ), 1.0, 0.5 );
     return c;
   };
-  var imgDir = opts.imgDir || '/textures/';
+  var imgDir = opts.imgDir || '/globe/textures/';
 
   var Shaders = {
     'earth' : {
