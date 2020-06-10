@@ -1,8 +1,10 @@
-![alt text](https://ondrej-vesely.github.io/globe/thumbnail.jpg)
+# t?f Globe
 
 The **The Why Factory Globe** is a fork of open platform for geographic data visualization created by the Google Data Arts Team aproprieted for The Why Factory studio at TU Delft.
 
 Check out the original project at https://experiments.withgoogle.com/chrome/globe.
+
+![alt text](https://ondrej-vesely.github.io/globe/thumbnail.jpg)
 
 ----
 
