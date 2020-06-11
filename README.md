@@ -1,6 +1,6 @@
 # t?f Globe
 
-The **The Why Factory Globe** is a fork of open platform for geographic data visualization created by the Google Data Arts Team aproprieted for The Why Factory studio at TU Delft.
+The **The Why Factory Globe** is a clone of WebGL Globen, an open platform for geographic data visualization created by the Google Data Arts Team, approprieted for The Why Factory studio at TU Delft.
 
 Check out the original project at https://experiments.withgoogle.com/chrome/globe.
 
