@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Explorer lite - Setting</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="./js/getGFolderObj.js" type="text/javascript" language="javascript"></script>
+    <script src="./js/settings.js" type="text/javascript" language="javascript"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Button to Open the gettingDataPopup -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gettingDataView" onclick="drawSettingViewBody()">
+        Get Data
+  </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="buttons-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li>
+                <!--button to load csv uncommented-->
+                <p class="navbar-text">
+                    <button id="showLoadData" class="file-upload" style="border-radius: 20px;">Get Data</button>
+                    
+                </p>
+            </li>
+        </ul>
+        <div id = "navbar-studyInfo">
+            <h4></h4>
+            <h6></h6>
+        </div>
+    </div>
+
+    <div class="container">  
+            
+    <!--load data div-->
+    
+    <div class="col-sm-12 col-centered" id="loadDataContainer" style="width: 700px; height: 500px">
+        <button type="button" class="btn btn-secondary btn-sm pull-right popupWindowClose">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+
+        <h2 class="text-center" style="margin: 100px 0 30px 0;">
+            From the cloud:
+        </h2>
+        <p class="text-center">
+            <input type="text" id="folderLink" class="btn btn-secondary btn-sm toggled" name="imgfolder" placeholder="GoogleDrive, OneDrive, or server link" value="https://drive.google.com/drive/folders/14fhftDFou0htwqsQEg4dwLDm_G7h-PZH"
+            />
+            <input type="text" id="folderLinkID" class="btn d-none" name="imgfolder" placeholder="FolderID" />
+            <button type="button" id="loadData" onclick="LoadFromCloud()" class="file-upload" style="border-radius:0 20px 20px 0;">Load Data</button>
+        </p>
+        <h5 class="text-center" style="color: #9d9d9d;">Please put data.csv, images, and 3D-json files into the same folder.(<a href="design_explorer_data/example/online/example.zip"
+                target="_blank">example.zip</a>)</h5>
+        
+        <div id="loadFileLocally">
+            <h4 class="text-center" style="margin: 60px 0 60px 0;">
+                Or
+            </h4>
+            <p class="text-center">
+                <input type="file" id="csv-file" class="btn btn-secondary btn-sm" name="files">
+            </p>
+            <h5 class="text-center" style="color: #9d9d9d;">Please put valid images and 3D-json files URL. (Example:<a href="design_explorer_data/example/LocalCSV_example.csv" target="_blank">data.csv</a>)</h5>
+        </div>
+        
+    </div>
+
+     <!-- Button to Open the setting -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settingView" onclick="drawSettingViewBody()">
+        Settings
+    </button>
+    
+    
+    <!-- The Setting View -->
+    <div class="modal fade" id="settingView">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Settings</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" id="settingViewBody">
+
+            <button id="chartSettingBtn" data-toggle="collapse" data-target="#visualSettingView" >ChartSetting</button>
+            <button id="paramSettingBtn" data-toggle="collapse" data-target="#paramSettingView" >paramSettingView</button>
+            <div id="visualSettingView" class="collapse">
+                <div class="card card-body">
+                    <div class="panel-group" id="visSettingList">
+                            <button class="btn btn-primary" onclick="addBarChart()">new BarChart</button>
+                            <!--placeholder for visuals setting list-->
+                    </div>
+                    <!-- barChart setting template -->
+                    <div class="d-none" id="barChartTemp">
+                        <ul class="list-group">
+                            <li class="list-group-item form-inline">name
+                                <input id="name" class="form-control input-sm" type="text" placeholder="newBarChart">
+                            </li>
+                            <li class="list-group-item form-inline">stacked
+                                <input id="stacked"  class="form-control input-sm" type="text" placeholder="true">
+                            </li>
+                            <li class="list-group-item form-inline">yAxisText
+                                <input id="yAxisText" class="form-control input-sm" type="text" placeholder="YAxisTitle">
+                            </li>
+                            <li class="list-group-item form-inline">maxVal
+                            <input id="maxVal" class="form-control input-sm" type="text", value="">
+                            </li>
+                            <li class="list-group-item form-inline">dataColors
+                                <input id="dataColors" class="form-control input-sm" type="text" value="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="paramSettingView" class="collapse">
+                <div class="card card-body">
+                    <div class="panel-group" id="dimSettingList">
+                            <!--placeholder for parameters setting list-->
+                    </div>
+                </div>
+                    
+            </div>
+
+            
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="updateView()">Update</button>
+            <button type="button" class="btn btn-primary" onclick="saveSettings()">Save</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+        </div>
+    </div>
+    </div>
+
+</div>
+</body>
+</html>
