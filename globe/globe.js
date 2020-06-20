@@ -365,6 +365,9 @@ DAT.Globe = function(container, opts) {
     camera.lookAt(mesh.position);
 
     renderer.render(scene, camera);
+
+    // Dirty autorotate on every frame - probably FPS dependednt
+    target.x = target.x + 0.002
   }
 
   init();
