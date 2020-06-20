@@ -141,6 +141,8 @@
     } else {
 
       var years = ['1990','1995','2000'];
+      var activeYear = 0
+      var loopEnabled = true
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
@@ -148,6 +150,7 @@
       var i, tweens = [];
       
       var settime = function(globe, t) {
+        activeYear = t
         return function() {
           new TWEEN.Tween(globe).to({time: t/years.length},500).easing(TWEEN.Easing.Cubic.EaseOut).start();
           var y = document.getElementById('year'+years[t]);
@@ -165,11 +168,34 @@
       for(var i = 0; i<years.length; i++) {
         var y = document.getElementById('year'+years[i]);
         y.addEventListener('mouseover', settime(globe,i), false);
+        y.addEventListener('mouseover', loopOff());
+        y.addEventListener('mouseout', loopOn());
       }
       
       TWEEN.start();
+
+      // Basic loop trough years
+      function timeLoop() {
+        if(loopEnabled) {
+          activeYear = activeYear + 1
+          if (activeYear >= years.length) {
+            activeYear = 0
+          }
+
+          settime(globe, activeYear)()
+        }
+        setTimeout(timeLoop, 1000);
+      }  
       
-      // xhr request, replace with fetch?
+      function loopOn() {
+        loopEnabled = true
+      }
+
+      function loopOff() {
+        loopEnabled = false
+      }
+
+
       var xhr;
       xhr = new XMLHttpRequest();
       xhr.open('GET', 'data/population909500.json', true);
@@ -192,6 +218,10 @@
       };
       xhr.send(null);
     }
+
+    // Start time loop
+    timeLoop(); 
+
 
   </script>
 
