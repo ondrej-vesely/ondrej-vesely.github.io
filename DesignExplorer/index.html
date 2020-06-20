@@ -168,7 +168,7 @@
         
         // no img link
         if(file === 0 || file === undefined){
-            return "http://mingbopeng.github.io/DesignExplorer/img/thorntontomasetti.jpg";
+            return "img/thorntontomasetti.jpg";
         }
  
 
@@ -275,8 +275,8 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <div class="navbar-header" title="Design Explorer">
-                    <a href="http://tt-acm.github.io/DesignExplorer/"> <img style="max-width:350px; padding-top: 10px;" src="./img/DesignExplorerLogo3.png"></a>
+                <div class="navbar-header" title="Atlas of Solutions">
+                    <a href="http://thewhyfactory.com/"> <img style="max-width:350px; padding-top: 10px;" src="./img/twf_solutions_black.png"></a>
                 </div>
             </div>
 
@@ -286,8 +286,15 @@
                     <li>
                         <!--button to load csv uncommented-->
                         <p class="navbar-text">
-                            <button id="showLoadData" class="file-upload" style="border-radius: 20px;">Get Data</button>
+                            <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/marcel-test/")'>Load Scenario 1</button>
                         </p>
+                        <p class="navbar-text">
+                            <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/marcel-test 2/")'>Load Scenario 2</button>
+                        </p>
+                        <p class="navbar-text">
+                            <button id="showLoadData" class="file-upload" style="border-radius: 20px;">Get More Data</button>
+                        </p>
+                        
                     </li>
                 </ul>
                 <div id = "navbar-studyInfo">
@@ -2028,7 +2035,6 @@
             // });
         }
 
-        d3.select("#welcome").style("display", "none");
         window.onload = function () {
             var isIE = /*@cc_on!@*/false || !!document.documentMode;
             
@@ -3019,7 +3025,11 @@
             
         }
 
-
+        
+        function load(path) {
+            loadFromUrl(path)
+            loadSetting(path + 'settings.json')
+        }
 
     </script>
 
