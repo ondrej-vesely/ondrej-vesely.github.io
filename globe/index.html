@@ -168,8 +168,8 @@
       for(var i = 0; i<years.length; i++) {
         var y = document.getElementById('year'+years[i]);
         y.addEventListener('mouseover', settime(globe,i), false);
-        y.addEventListener('mouseover', loopOff());
-        y.addEventListener('mouseout', loopOn());
+        y.addEventListener('mouseover', loopOff);
+        y.addEventListener('mouseout', loopOn);
       }
       
       TWEEN.start();
@@ -183,16 +183,19 @@
           }
 
           settime(globe, activeYear)()
+          setTimeout(timeLoop, 1000);
         }
-        setTimeout(timeLoop, 1000);
       }  
       
       function loopOn() {
         loopEnabled = true
+        timeLoop(); 
+        console.log('Loop resumed')
       }
 
       function loopOff() {
         loopEnabled = false
+        console.log('Loop paused')
       }
 
 
