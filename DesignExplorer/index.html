@@ -666,7 +666,7 @@
     </script>
 
     <!-- welcome div  -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         sampleFiles = {
             1: "design_explorer_data/LittleRedBox.csv",
             2: "design_explorer_data/default_onload.csv",
@@ -698,7 +698,7 @@
                     loadSetting(settingFilePath);
                     });
 
-            });
+            }); -->
 
     </script>
 
@@ -2028,9 +2028,10 @@
             // });
         }
 
-
+        d3.select("#welcome").style("display", "none");
         window.onload = function () {
             var isIE = /*@cc_on!@*/false || !!document.documentMode;
+            
 
             if(isIE){
                 alert("Please use modern browsers to ensure the maximized experience.\n\nGoogle Chrome, or Firefox is suggested to use.");
