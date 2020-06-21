@@ -296,6 +296,9 @@
                             <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/high-res/")'>Cloud Control high</button>
                         </p>
                         <p class="navbar-text">
+                            <button class="file-upload" style="border-radius: 20px;" onClick='load("design_explorer_data/")'>Box Example</button>
+                        </p>
+                        <p class="navbar-text">
                             <button id="showLoadData" class="file-upload" style="border-radius: 20px;">Get More Data</button>
                         </p>
                         
@@ -495,40 +498,21 @@
                         <span class="glyphicon glyphicon-remove"></span>
                     </button>
                     <br>
-                    <h1 class="text-center" style="margin-top: 1em;"> Welcome to Design Explorer!</h1>
+                    <img src="img/twf_solutions_black.png" width=100%;>
                     <h4 class="text-center">
-                        Design Explorer is an open source tool for exploring multi-dimensional parametric studies!
+                        T?F Atlas of Solutions is a tool for exploring multi-dimensional parametric futures!
                     </h4>
                     <br>
-
-                    <h5 class="text-center">Try one of following sample design sets or load your own data.<a href="http://www.mpendesign.com/category/tutorial/" target="_blank"> (Tutorial)</a></h5> 
-                    <h5 class="text-center"></h5>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img src="img/RedBox.gif" class="sampleImage image-rounded" id="sample1">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/Daylighting.gif" class="sampleImage image-rounded" id="sample2">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/BoxBuilding.gif" class="sampleImage image-rounded" id="sample3">
-                        </div>
-                        <br>
-                        <br>
-                    </div>
                     <div class="col-lg-12" style="position: absolute;bottom: 2em;width: calc(100% - 60px);">
                         <h3 class="text-center"> Happy Exploring! </h3>
-                        <h5 class="text-center">v2 (08/15/2019)</h5>
                         <br>
                         <h5 class="text-center">
-                            &copy; CORE studio | Thornton Tomasetti |
-                            <a href="http://core.thorntontomasetti.com/about" target="_blank"> About</a> |
-                            <a href="http://core.thorntontomasetti.com/about/services" target="_blank">Services</a> |
-                            <a href="http://core.thorntontomasetti.com/about/contact" target="_blank">Contact</a>
+                            &copy; Based on code by CORE studio | Thornton Tomasetti |
+                            <a href="https://github.com/tt-acm/DesignExplorer" target="_blank"> Github</a>
                         </h5>
                         <h5 class="text-center">
                             Updated by
-                            <a href="http://www.mpendesign.com" target="_blank">Mingbo Peng</a>
+                            <a href="https://github.com/ondrej-vesely" target="_blank">Ondrej Veselý</a>
                         </h5>
                     </div>
                 </div>
@@ -548,6 +532,7 @@
                         <input type="text" id="folderLinkID" class="btn btn-default btn-hd" name="imgfolder" placeholder="FolderID" />
                         <button id="loadData" onclick="MP_getGoogleIDandLoad()" class="file-upload" style="border-radius:0 20px 20px 0;">Load Data</button>
                     </p>
+                    <h5 class="text-center">Try one of following sample design sets or load your own data.<a href="https://www.mpendesign.com/design-explorer/how-to-use-colibri-and-design-explorer-penndesign/" target="_blank"> (Tutorial)</a></h5>
                     <h5 class="text-center" style="color: #9d9d9d;">Please put data.csv, images, and 3D-json files into the same folder.(<a href="design_explorer_data/example/online/example.zip"
                             target="_blank">example.zip</a>)</h5>
                     
