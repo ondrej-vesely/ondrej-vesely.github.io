@@ -144,11 +144,13 @@
         if (csvFilePathLink.length > 0) {
             // remove the current selection
             unloadPageContent();
+            
             d3.csv(csvFilePathLink, function (data) {
                 loadDataToDesignExplorer(data);
                 loadSetting();
                 updateLayoutOnDeselect();
             } );
+
             //window.prompt only if user input data, not from URL
             if (document.getElementById("folderLink").value) {
                 showStillLink();
@@ -160,7 +162,6 @@
         } else {
             alert("You have to put Google Drive Folder information first!");
         }
-
     }
 
     function makeUrl(file,type) {
@@ -307,7 +308,7 @@
         </div>
     </nav>
 
-    <div id="wrapper" class="toggled">
+    <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -372,7 +373,9 @@
                             </div>
                             <!-- parallel coordinates -->
                             <div class="row-fluid">
-                                <div id="graph" class="parcoords collapse in">
+                                <!-- Hide parallel chart -->
+                                <!-- <div id="graph" class="parcoords collapse in">  -->
+                                <div id="graph" class="parcoords collapse 2s">
                                     <!-- <h1>Parallel coordinates graph</h1> -->
                                 </div>
                             </div>
@@ -444,7 +447,7 @@
                                 <button type="button" class="btn btn-default btn-xs" id="fullscreentoggle" title="Full Screen Toggle">
                                     <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                                 </button>
-                                <button type="button" class="btn btn-default btn-xs"title="Unselect" onclick="updateLayoutOnDeselect()">
+                                <button type="button" class="btn btn-default btn-xs"title="Unselect" id='unselect-btn' onclick="updateLayoutOnDeselect()">
                                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                                 </button>
 
@@ -673,7 +676,7 @@
     </script>
 
     <!-- welcome div  -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         sampleFiles = {
             1: "design_explorer_data/LittleRedBox.csv",
             2: "design_explorer_data/default_onload.csv",
@@ -705,7 +708,7 @@
                     loadSetting(settingFilePath);
                     });
 
-            }); -->
+            });
 
     </script>
 
@@ -2033,6 +2036,9 @@
 
             //     });
             // });
+            
+            // THIS IS A FUCKING HACK BUT IM TOO LAME TO FIGURE THIS OUT
+            setTimeout(setupUi, 50);
         }
 
         window.onload = function () {
@@ -2049,12 +2055,7 @@
                 MP_getGoogleIDandLoad("URL");
             } else {
                 // load default data
-                //parse the csv data from the design_explorer_data folder
-                d3.csv("design_explorer_data/default_onload.csv", function (data) {
-                    loadDataToDesignExplorer(data);
-                    loadSetting("design_explorer_data/DefaultData/settings.json");
-                    });
-
+                loadFromUrl('../data/marcel-test/')
             }
 
             //function to close intro window div
@@ -3025,15 +3026,42 @@
             
         }
 
-        
-        function load(path) {
-            loadFromUrl(path)
-            loadSetting(path + 'settings.json')
-        }
-
     </script>
 
+    <!-- Hacky additions for Why Factory -->
+    <script>
 
+        // Load both data.csv and a settings.json from a folder
+        function load(path) {           
+                loadFromUrl(path)
+                loadSetting(path + 'settings.json')
+            }
+        
+        
+        // UI startup routine
+        function setupUi() {
+            // Open first solution thumbnail if its loaded
+            if (document.querySelector("#thumbnails-btm > div:nth-child(1) > img")) {
+                document.querySelector("#thumbnails-btm > div:nth-child(1) > img").__onclick()
+            // if not wait a bit
+            } else {
+                setTimeout(setupUi, 100)
+            }
+        }
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>

@@ -351,3 +351,51 @@ g.cell text {
 }
 
 .col-0 { width: 180px; }
+
+
+/* Extra Why Factory stuff */
+
+#PcChartWrapper {
+    display: none;
+}
+
+#ScChartWrapper {
+    display: none;
+}
+
+#star-rating-control {
+    display: none;
+}
+
+#legend {
+    display: none;
+}
+
+.col-lg-12.sorting {
+    display: none;
+}
+
+.star-rating-control {
+    display: none;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+}
+
+#thumbnails-btm_container {
+    display: none;
+}
+
+#zoomedArea {
+    width: 100%;
+}
+
+.panel-group.Spectacles_attributeList {
+    left: 1%;
+    z-index: 1000;
+}
+
+#unselect-btn {
+    display: none;
+}
