@@ -290,10 +290,7 @@
                             <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/marcel-test/")'>Cloud Control</button>
                         </p>
                         <p class="navbar-text">
-                            <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/marcel-test 2/")'>Cloud Control low</button>
-                        </p>
-                        <p class="navbar-text">
-                            <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/high-res/")'>Cloud Control high</button>
+                            <button class="file-upload" style="border-radius: 20px;" onClick='load("../data/urban-test")'>Urbanization</button>
                         </p>
                         <p class="navbar-text">
                             <button class="file-upload" style="border-radius: 20px;" onClick='load("design_explorer_data/")'>Box Example</button>
@@ -1008,7 +1005,7 @@
 
             // hide zoomed area
             d3.selectAll("#zoomedArea")
-                .transition().duration(300)
+                .transition().duration(200)
                 .style("height", "0px");
 
             // show btm thumbnail
@@ -2026,7 +2023,7 @@
             // });
             
             // THIS IS A FUCKING HACK BUT IM TOO LAME TO FIGURE THIS OUT
-            setTimeout(setupUi, 50);
+            setTimeout(setupUi, 300);
         }
 
         window.onload = function () {
