@@ -18,7 +18,7 @@ output {
     display: inline-block;
     font-size: 11px;
     font-weight: bold;
-    color: red;
+    color: rgb(0, 0, 0);
 }
 /* centered columns styles */
 
@@ -363,10 +363,6 @@ g.cell text {
     display: none;
 }
 
-#star-rating-control {
-    display: none;
-}
-
 #legend {
     display: none;
 }
@@ -379,23 +375,67 @@ g.cell text {
     display: none;
 }
 
-#sidebar-wrapper {
-    width: 250px;
-}
-
 #thumbnails-btm_container {
     display: none;
 }
 
 #zoomedArea {
     width: 100%;
-}
-
-.panel-group.Spectacles_attributeList {
-    left: 1%;
-    z-index: 1000;
+    height: 80vh !important;
 }
 
 #unselect-btn {
     display: none;
 }
+
+/* Sliders */
+
+#sidebar-wrapper {
+    width: 360px;
+    z-index: 999;
+}
+
+#inputSliders {
+    left: 3%;
+    width: 140%;
+}
+
+.inputSlider {
+    font-size: 18px;
+}
+
+
+/* Side Attributes */
+#IterationData {
+    left: 1%;
+    z-index: 1000;
+    width: 340px !important;
+    min-width: 340px !important;
+}
+
+.panel-body {
+    font-size: 18px;
+}
+
+.panel-body strong {
+    font-size: 13px;
+}
+
+/* Welcome container */
+#welcomeContainer {
+    width: 0;
+    height: 0;
+}
+
+#welcomeContainer .col-sm-4 {
+    width: 100%;
+    float: center;
+  }
+
+  /* Upper buttons */
+
+  .navbar-text button{
+    font-size: 12px;
+    border-radius: 5px;
+    height: 30px;
+  }
