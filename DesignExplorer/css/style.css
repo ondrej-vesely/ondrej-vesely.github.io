@@ -432,10 +432,22 @@ g.cell text {
     float: center;
   }
 
-  /* Upper buttons */
 
-  .navbar-text button{
+/* Upper buttons */
+.navbar-text button{
     font-size: 12px;
+    font-weight: 600;
     border-radius: 5px;
-    height: 30px;
+    height: 25px;
+    margin-top: 5px;
+    color: white;
+    background: black;
   }
+
+
+/* 2D 3D buttons */
+#vis label {
+    top: 3px;
+    font-size: 18px;
+    position: relative;
+}
