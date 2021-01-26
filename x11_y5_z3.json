@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "version": 4.3,
+    "type": "Object3d",
+    "generator": "Triceratops Exporter"
+  },
+  "object": {
+    "uuid": "61cd3e24-9758-4603-9424-4a36814ea324",
+    "type": "Object3D",
+    "name": "Collection",
+    "matrix": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "children": [
+      {
+        "uuid": "70fa31e5-c4be-4b07-a2d2-37e2eb62914a",
+        "type": "Object3D",
+        "name": "default",
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "children": [
+          {
+            "uuid": "699e647c-8d43-415b-ab87-339fb30b76dd",
+            "name": "",
+            "type": "Mesh",
+            "geometry": "049d6ee9-7d60-4939-a2b5-e5b3f4ca3a29",
+            "matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              5.2828521728515625,
+              6.5889739990234375,
+              -266.99575805664063,
+              1.0
+            ],
+            "castShadow": true,
+            "receiveShadow": true,
+            "userData": null
+          }
+        ]
+      }
+    ]
+  },
+  "geometries": [
+    {
+      "uuid": "049d6ee9-7d60-4939-a2b5-e5b3f4ca3a29",
+      "type": "BufferGeometry",
+      "data": {
+        "attributes": {
+          "position": {
+            "itemSize": 3,
+            "type": "Float32Array",
+            "array": [
+              348.669,
+              -362.394,
+              0.0,
+              348.669,
+              362.394,
+              0.0,
+              -348.669,
+              -362.394,
+              0.0,
+              -348.669,
+              362.394,
+              0.0
+            ]
+          },
+          "normal": {
+            "itemSize": 3,
+            "type": "Float32Array",
+            "array": [
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          "uv": {
+            "itemSize": 2,
+            "type": "Float32Array",
+            "array": [
+              0.0,
+              0.329,
+              0.0,
+              0.671,
+              0.328,
+              0.329,
+              0.328,
+              0.671
+            ]
+          }
+        },
+        "index": {
+          "type": "Uint8Array",
+          "array": [
+            1,
+            0,
+            2,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    }
+  ]
+}
