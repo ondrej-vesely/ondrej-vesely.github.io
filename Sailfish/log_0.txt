@@ -1,0 +1,1431 @@
+Settings
+Brute Force
+
+Iteration 1
+
+Time to get parameters: 00:00:00.0435337
+Parameters to evaluate: 0,5
+Time to get function value: 00:00:00.0756998
+Function Value: 375,335
+
+Iteration 2
+
+Time to get parameters: 00:00:00.0065656
+Parameters to evaluate: 0,6
+Time to get function value: 00:00:00.0603059
+Function Value: 777.6,561.6
+
+Iteration 3
+
+Time to get parameters: 00:00:00.0068018
+Parameters to evaluate: 0,7
+Time to get function value: 00:00:00.0857773
+Function Value: 1440.6,872.2
+
+Iteration 4
+
+Time to get parameters: 00:00:00.0070297
+Parameters to evaluate: 0,8
+Time to get function value: 00:00:00.1908288
+Function Value: 2457.6,1280
+
+Iteration 5
+
+Time to get parameters: 00:00:00.0073679
+Parameters to evaluate: 0,9
+Time to get function value: 00:00:00.0680523
+Function Value: 3936.6,1798.2
+
+Iteration 6
+
+Time to get parameters: 00:00:00.0077603
+Parameters to evaluate: 0,10
+Time to get function value: 00:00:00.0763652
+Function Value: 6000,2440
+
+Iteration 7
+
+Time to get parameters: 00:00:00.0071885
+Parameters to evaluate: 0.1,5
+Time to get function value: 00:00:00.0711197
+Function Value: 375,335
+
+Iteration 8
+
+Time to get parameters: 00:00:00.0068302
+Parameters to evaluate: 0.1,6
+Time to get function value: 00:00:00.0695280
+Function Value: 777.6,561.6
+
+Iteration 9
+
+Time to get parameters: 00:00:00.0075133
+Parameters to evaluate: 0.1,7
+Time to get function value: 00:00:00.0687387
+Function Value: 1440.6,872.2
+
+Iteration 10
+
+Time to get parameters: 00:00:00.0074986
+Parameters to evaluate: 0.1,8
+Time to get function value: 00:00:00.0676126
+Function Value: 2457.6,1280
+
+Iteration 11
+
+Time to get parameters: 00:00:00.0079920
+Parameters to evaluate: 0.1,9
+Time to get function value: 00:00:00.0717553
+Function Value: 3936.6,1798.2
+
+Iteration 12
+
+Time to get parameters: 00:00:00.0095153
+Parameters to evaluate: 0.1,10
+Time to get function value: 00:00:00.0733236
+Function Value: 6000,2440
+
+Iteration 13
+
+Time to get parameters: 00:00:00.0073116
+Parameters to evaluate: 0.2,5
+Time to get function value: 00:00:00.0804283
+Function Value: 375,335
+
+Iteration 14
+
+Time to get parameters: 00:00:00.0089285
+Parameters to evaluate: 0.2,6
+Time to get function value: 00:00:00.0674384
+Function Value: 777.6,561.6
+
+Iteration 15
+
+Time to get parameters: 00:00:00.0073110
+Parameters to evaluate: 0.2,7
+Time to get function value: 00:00:00.0765233
+Function Value: 1440.6,872.2
+
+Iteration 16
+
+Time to get parameters: 00:00:00.0095736
+Parameters to evaluate: 0.2,8
+Time to get function value: 00:00:00.0715540
+Function Value: 2457.6,1280
+
+Iteration 17
+
+Time to get parameters: 00:00:00.0086303
+Parameters to evaluate: 0.2,9
+Time to get function value: 00:00:00.0720228
+Function Value: 3936.6,1798.2
+
+Iteration 18
+
+Time to get parameters: 00:00:00.0090009
+Parameters to evaluate: 0.2,10
+Time to get function value: 00:00:00.0778944
+Function Value: 6000,2440
+
+Iteration 19
+
+Time to get parameters: 00:00:00.0100312
+Parameters to evaluate: 0.3,5
+Time to get function value: 00:00:00.0675901
+Function Value: 375,335
+
+Iteration 20
+
+Time to get parameters: 00:00:00.0111120
+Parameters to evaluate: 0.3,6
+Time to get function value: 00:00:00.0743522
+Function Value: 777.6,561.6
+
+Iteration 21
+
+Time to get parameters: 00:00:00.0086336
+Parameters to evaluate: 0.3,7
+Time to get function value: 00:00:00.0733329
+Function Value: 1440.6,872.2
+
+Iteration 22
+
+Time to get parameters: 00:00:00.0099175
+Parameters to evaluate: 0.3,8
+Time to get function value: 00:00:00.0677012
+Function Value: 2457.6,1280
+
+Iteration 23
+
+Time to get parameters: 00:00:00.0094683
+Parameters to evaluate: 0.3,9
+Time to get function value: 00:00:00.0666820
+Function Value: 3936.6,1798.2
+
+Iteration 24
+
+Time to get parameters: 00:00:00.0119339
+Parameters to evaluate: 0.3,10
+Time to get function value: 00:00:00.0732336
+Function Value: 6000,2440
+
+Iteration 25
+
+Time to get parameters: 00:00:00.0102102
+Parameters to evaluate: 0.4,5
+Time to get function value: 00:00:00.0676286
+Function Value: 375,335
+
+Iteration 26
+
+Time to get parameters: 00:00:00.0127564
+Parameters to evaluate: 0.4,6
+Time to get function value: 00:00:00.0698244
+Function Value: 777.6,561.6
+
+Iteration 27
+
+Time to get parameters: 00:00:00.0095436
+Parameters to evaluate: 0.4,7
+Time to get function value: 00:00:00.0716684
+Function Value: 1440.6,872.2
+
+Iteration 28
+
+Time to get parameters: 00:00:00.0109604
+Parameters to evaluate: 0.4,8
+Time to get function value: 00:00:00.0686073
+Function Value: 2457.6,1280
+
+Iteration 29
+
+Time to get parameters: 00:00:00.0090223
+Parameters to evaluate: 0.4,9
+Time to get function value: 00:00:00.0630081
+Function Value: 3936.6,1798.2
+
+Iteration 30
+
+Time to get parameters: 00:00:00.0110723
+Parameters to evaluate: 0.4,10
+Time to get function value: 00:00:00.0697190
+Function Value: 6000,2440
+
+Iteration 31
+
+Time to get parameters: 00:00:00.0098193
+Parameters to evaluate: 0.5,5
+Time to get function value: 00:00:00.0687020
+Function Value: 375,335
+
+Iteration 32
+
+Time to get parameters: 00:00:00.0117731
+Parameters to evaluate: 0.5,6
+Time to get function value: 00:00:00.0681713
+Function Value: 777.6,561.6
+
+Iteration 33
+
+Time to get parameters: 00:00:00.0091126
+Parameters to evaluate: 0.5,7
+Time to get function value: 00:00:00.0635802
+Function Value: 1440.6,872.2
+
+Iteration 34
+
+Time to get parameters: 00:00:00.0104123
+Parameters to evaluate: 0.5,8
+Time to get function value: 00:00:00.0689201
+Function Value: 2457.6,1280
+
+Iteration 35
+
+Time to get parameters: 00:00:00.0099802
+Parameters to evaluate: 0.5,9
+Time to get function value: 00:00:00.0688344
+Function Value: 3936.6,1798.2
+
+Iteration 36
+
+Time to get parameters: 00:00:00.0116085
+Parameters to evaluate: 0.5,10
+Time to get function value: 00:00:00.0703211
+Function Value: 6000,2440
+
+Iteration 37
+
+Time to get parameters: 00:00:00.0104192
+Parameters to evaluate: 0.6,5
+Time to get function value: 00:00:00.0721882
+Function Value: 375,335
+
+Iteration 38
+
+Time to get parameters: 00:00:00.0106937
+Parameters to evaluate: 0.6,6
+Time to get function value: 00:00:00.0640169
+Function Value: 777.6,561.6
+
+Iteration 39
+
+Time to get parameters: 00:00:00.0107317
+Parameters to evaluate: 0.6,7
+Time to get function value: 00:00:00.0689638
+Function Value: 1440.6,872.2
+
+Iteration 40
+
+Time to get parameters: 00:00:00.0107325
+Parameters to evaluate: 0.6,8
+Time to get function value: 00:00:00.0664212
+Function Value: 2457.6,1280
+
+Iteration 41
+
+Time to get parameters: 00:00:00.0103594
+Parameters to evaluate: 0.6,9
+Time to get function value: 00:00:00.0678159
+Function Value: 3936.6,1798.2
+
+Iteration 42
+
+Time to get parameters: 00:00:00.0111283
+Parameters to evaluate: 0.6,10
+Time to get function value: 00:00:00.0688049
+Function Value: 6000,2440
+
+Iteration 43
+
+Time to get parameters: 00:00:00.0113081
+Parameters to evaluate: 0.7,5
+Time to get function value: 00:00:00.0679595
+Function Value: 375,335
+
+Iteration 44
+
+Time to get parameters: 00:00:00.0110813
+Parameters to evaluate: 0.7,6
+Time to get function value: 00:00:00.0727439
+Function Value: 777.6,561.6
+
+Iteration 45
+
+Time to get parameters: 00:00:00.0107681
+Parameters to evaluate: 0.7,7
+Time to get function value: 00:00:00.0709287
+Function Value: 1440.6,872.2
+
+Iteration 46
+
+Time to get parameters: 00:00:00.0109450
+Parameters to evaluate: 0.7,8
+Time to get function value: 00:00:00.0702855
+Function Value: 2457.6,1280
+
+Iteration 47
+
+Time to get parameters: 00:00:00.0105116
+Parameters to evaluate: 0.7,9
+Time to get function value: 00:00:00.0691723
+Function Value: 3936.6,1798.2
+
+Iteration 48
+
+Time to get parameters: 00:00:00.0110041
+Parameters to evaluate: 0.7,10
+Time to get function value: 00:00:00.0667290
+Function Value: 6000,2440
+
+Iteration 49
+
+Time to get parameters: 00:00:00.0114867
+Parameters to evaluate: 0.8,5
+Time to get function value: 00:00:00.0669125
+Function Value: 375,335
+
+Iteration 50
+
+Time to get parameters: 00:00:00.0122234
+Parameters to evaluate: 0.8,6
+Time to get function value: 00:00:00.0732360
+Function Value: 777.6,561.6
+
+Iteration 51
+
+Time to get parameters: 00:00:00.0117612
+Parameters to evaluate: 0.8,7
+Time to get function value: 00:00:00.0749445
+Function Value: 1440.6,872.2
+
+Iteration 52
+
+Time to get parameters: 00:00:00.0143796
+Parameters to evaluate: 0.8,8
+Time to get function value: 00:00:00.0685311
+Function Value: 2457.6,1280
+
+Iteration 53
+
+Time to get parameters: 00:00:00.0138615
+Parameters to evaluate: 0.8,9
+Time to get function value: 00:00:00.0721737
+Function Value: 3936.6,1798.2
+
+Iteration 54
+
+Time to get parameters: 00:00:00.0141044
+Parameters to evaluate: 0.8,10
+Time to get function value: 00:00:00.0714298
+Function Value: 6000,2440
+
+Iteration 55
+
+Time to get parameters: 00:00:00.0119944
+Parameters to evaluate: 0.9,5
+Time to get function value: 00:00:00.0631385
+Function Value: 375,335
+
+Iteration 56
+
+Time to get parameters: 00:00:00.0119567
+Parameters to evaluate: 0.9,6
+Time to get function value: 00:00:00.0712210
+Function Value: 777.6,561.6
+
+Iteration 57
+
+Time to get parameters: 00:00:00.0116081
+Parameters to evaluate: 0.9,7
+Time to get function value: 00:00:00.0693752
+Function Value: 1440.6,872.2
+
+Iteration 58
+
+Time to get parameters: 00:00:00.0127399
+Parameters to evaluate: 0.9,8
+Time to get function value: 00:00:00.0690361
+Function Value: 2457.6,1280
+
+Iteration 59
+
+Time to get parameters: 00:00:00.0122505
+Parameters to evaluate: 0.9,9
+Time to get function value: 00:00:00.0673879
+Function Value: 3936.6,1798.2
+
+Iteration 60
+
+Time to get parameters: 00:00:00.0122742
+Parameters to evaluate: 0.9,10
+Time to get function value: 00:00:00.0697920
+Function Value: 6000,2440
+
+Iteration 61
+
+Time to get parameters: 00:00:00.0120120
+Parameters to evaluate: 1,5
+Time to get function value: 00:00:00.0669650
+Function Value: 375,335
+
+Iteration 62
+
+Time to get parameters: 00:00:00.0122090
+Parameters to evaluate: 1,6
+Time to get function value: 00:00:00.0789063
+Function Value: 777.6,561.6
+
+Iteration 63
+
+Time to get parameters: 00:00:00.0126664
+Parameters to evaluate: 1,7
+Time to get function value: 00:00:00.0726130
+Function Value: 1440.6,872.2
+
+Iteration 64
+
+Time to get parameters: 00:00:00.0144485
+Parameters to evaluate: 1,8
+Time to get function value: 00:00:00.0664394
+Function Value: 2457.6,1280
+
+Iteration 65
+
+Time to get parameters: 00:00:00.0122440
+Parameters to evaluate: 1,9
+Time to get function value: 00:00:00.0716404
+Function Value: 3936.6,1798.2
+
+Iteration 66
+
+Time to get parameters: 00:00:00.0130342
+Parameters to evaluate: 1,10
+Time to get function value: 00:00:00.0697069
+Function Value: 6000,2440
+
+Iteration Done
+Best Value: -∞
+
+Total time: 00:00:08.2598642
+Best Value: -∞
+Best Parameters: 
+Iteration Done
+Best Value: -∞
+
+Total time: 00:00:08.2598642
+Best Value: -∞
+Best Parameters: 
+Settings
+Brute Force
+
+Iteration 1
+
+Time to get parameters: 00:00:00.0520372
+Parameters to evaluate: 0,5
+Time to get function value: 00:00:00.0951253
+Function Value: 375,335
+
+Iteration 2
+
+Time to get parameters: 00:00:00.0205746
+Parameters to evaluate: 0,6
+Time to get function value: 00:00:00.0829289
+Function Value: 777.6,561.6
+
+Iteration 3
+
+Time to get parameters: 00:00:00.0153694
+Parameters to evaluate: 0,7
+Time to get function value: 00:00:00.0790672
+Function Value: 1440.6,872.2
+
+Iteration 4
+
+Time to get parameters: 00:00:00.0162317
+Parameters to evaluate: 0,8
+Time to get function value: 00:00:00.0889714
+Function Value: 2457.6,1280
+
+Iteration 5
+
+Time to get parameters: 00:00:00.0157046
+Parameters to evaluate: 0,9
+Time to get function value: 00:00:00.0929359
+Function Value: 3936.6,1798.2
+
+Iteration 6
+
+Time to get parameters: 00:00:00.0139246
+Parameters to evaluate: 0,10
+Time to get function value: 00:00:00.0854960
+Function Value: 6000,2440
+
+Iteration 7
+
+Time to get parameters: 00:00:00.0184367
+Parameters to evaluate: 0.1,5
+Time to get function value: 00:00:00.0781274
+Function Value: 375,335
+
+Iteration 8
+
+Time to get parameters: 00:00:00.0164616
+Parameters to evaluate: 0.1,6
+Time to get function value: 00:00:00.0826694
+Function Value: 777.6,561.6
+
+Iteration 9
+
+Time to get parameters: 00:00:00.0171547
+Parameters to evaluate: 0.1,7
+Time to get function value: 00:00:00.0839350
+Function Value: 1440.6,872.2
+
+Iteration 10
+
+Time to get parameters: 00:00:00.0140479
+Parameters to evaluate: 0.1,8
+Time to get function value: 00:00:00.0783741
+Function Value: 2457.6,1280
+
+Iteration 11
+
+Time to get parameters: 00:00:00.0186360
+Parameters to evaluate: 0.1,9
+Time to get function value: 00:00:00.0857287
+Function Value: 3936.6,1798.2
+
+Iteration 12
+
+Time to get parameters: 00:00:00.0164465
+Parameters to evaluate: 0.1,10
+Time to get function value: 00:00:00.0784484
+Function Value: 6000,2440
+
+Iteration 13
+
+Time to get parameters: 00:00:00.0208033
+Parameters to evaluate: 0.2,5
+Time to get function value: 00:00:00.0764211
+Function Value: 375,335
+
+Iteration 14
+
+Time to get parameters: 00:00:00.0191095
+Parameters to evaluate: 0.2,6
+Time to get function value: 00:00:00.0783462
+Function Value: 777.6,561.6
+
+Iteration 15
+
+Time to get parameters: 00:00:00.0146496
+Parameters to evaluate: 0.2,7
+Time to get function value: 00:00:00.0826929
+Function Value: 1440.6,872.2
+
+Iteration 16
+
+Time to get parameters: 00:00:00.0142867
+Parameters to evaluate: 0.2,8
+Time to get function value: 00:00:00.0879302
+Function Value: 2457.6,1280
+
+Iteration 17
+
+Time to get parameters: 00:00:00.0140845
+Parameters to evaluate: 0.2,9
+Time to get function value: 00:00:00.0840060
+Function Value: 3936.6,1798.2
+
+Iteration 18
+
+Time to get parameters: 00:00:00.0144017
+Parameters to evaluate: 0.2,10
+Time to get function value: 00:00:00.0804989
+Function Value: 6000,2440
+
+Iteration 19
+
+Time to get parameters: 00:00:00.0160510
+Parameters to evaluate: 0.3,5
+Time to get function value: 00:00:00.0851411
+Function Value: 375,335
+
+Iteration 20
+
+Time to get parameters: 00:00:00.0141005
+Parameters to evaluate: 0.3,6
+Time to get function value: 00:00:00.0877469
+Function Value: 777.6,561.6
+
+Iteration 21
+
+Time to get parameters: 00:00:00.0147670
+Parameters to evaluate: 0.3,7
+Time to get function value: 00:00:00.0862992
+Function Value: 1440.6,872.2
+
+Iteration 22
+
+Time to get parameters: 00:00:00.0145774
+Parameters to evaluate: 0.3,8
+Time to get function value: 00:00:00.0887170
+Function Value: 2457.6,1280
+
+Iteration 23
+
+Time to get parameters: 00:00:00.0150469
+Parameters to evaluate: 0.3,9
+Time to get function value: 00:00:00.0901496
+Function Value: 3936.6,1798.2
+
+Iteration 24
+
+Time to get parameters: 00:00:00.0145794
+Parameters to evaluate: 0.3,10
+Time to get function value: 00:00:00.0818263
+Function Value: 6000,2440
+
+Iteration 25
+
+Time to get parameters: 00:00:00.0152300
+Parameters to evaluate: 0.4,5
+Time to get function value: 00:00:00.0775006
+Function Value: 375,335
+
+Iteration 26
+
+Time to get parameters: 00:00:00.0144419
+Parameters to evaluate: 0.4,6
+Time to get function value: 00:00:00.0844732
+Function Value: 777.6,561.6
+
+Iteration 27
+
+Time to get parameters: 00:00:00.0148029
+Parameters to evaluate: 0.4,7
+Time to get function value: 00:00:00.0872116
+Function Value: 1440.6,872.2
+
+Iteration 28
+
+Time to get parameters: 00:00:00.0143712
+Parameters to evaluate: 0.4,8
+Time to get function value: 00:00:00.0891021
+Function Value: 2457.6,1280
+
+Iteration 29
+
+Time to get parameters: 00:00:00.0159326
+Parameters to evaluate: 0.4,9
+Time to get function value: 00:00:00.0938135
+Function Value: 3936.6,1798.2
+
+Iteration 30
+
+Time to get parameters: 00:00:00.0174405
+Parameters to evaluate: 0.4,10
+Time to get function value: 00:00:00.0856279
+Function Value: 6000,2440
+
+Iteration 31
+
+Time to get parameters: 00:00:00.0159604
+Parameters to evaluate: 0.5,5
+Time to get function value: 00:00:00.0765634
+Function Value: 375,335
+
+Iteration 32
+
+Time to get parameters: 00:00:00.0147442
+Parameters to evaluate: 0.5,6
+Time to get function value: 00:00:00.0779760
+Function Value: 777.6,561.6
+
+Iteration 33
+
+Time to get parameters: 00:00:00.0148726
+Parameters to evaluate: 0.5,7
+Time to get function value: 00:00:00.0866706
+Function Value: 1440.6,872.2
+
+Iteration 34
+
+Time to get parameters: 00:00:00.0141050
+Parameters to evaluate: 0.5,8
+Time to get function value: 00:00:00.0899863
+Function Value: 2457.6,1280
+
+Iteration 35
+
+Time to get parameters: 00:00:00.0172963
+Parameters to evaluate: 0.5,9
+Time to get function value: 00:00:00.0923335
+Function Value: 3936.6,1798.2
+
+Iteration 36
+
+Time to get parameters: 00:00:00.0162551
+Parameters to evaluate: 0.5,10
+Time to get function value: 00:00:00.0824859
+Function Value: 6000,2440
+
+Iteration 37
+
+Time to get parameters: 00:00:00.0173293
+Parameters to evaluate: 0.6,5
+Time to get function value: 00:00:00.0842454
+Function Value: 375,335
+
+Iteration 38
+
+Time to get parameters: 00:00:00.0151864
+Parameters to evaluate: 0.6,6
+Time to get function value: 00:00:00.0848351
+Function Value: 777.6,561.6
+
+Iteration 39
+
+Time to get parameters: 00:00:00.0187466
+Parameters to evaluate: 0.6,7
+Time to get function value: 00:00:00.0787085
+Function Value: 1440.6,872.2
+
+Iteration 40
+
+Time to get parameters: 00:00:00.0145272
+Parameters to evaluate: 0.6,8
+Time to get function value: 00:00:00.0840815
+Function Value: 2457.6,1280
+
+Iteration 41
+
+Time to get parameters: 00:00:00.0165495
+Parameters to evaluate: 0.6,9
+Time to get function value: 00:00:00.0915997
+Function Value: 3936.6,1798.2
+
+Iteration 42
+
+Time to get parameters: 00:00:00.0172956
+Parameters to evaluate: 0.6,10
+Time to get function value: 00:00:00.0843896
+Function Value: 6000,2440
+
+Iteration 43
+
+Time to get parameters: 00:00:00.0184666
+Parameters to evaluate: 0.7,5
+Time to get function value: 00:00:00.0799127
+Function Value: 375,335
+
+Iteration 44
+
+Time to get parameters: 00:00:00.0154478
+Parameters to evaluate: 0.7,6
+Time to get function value: 00:00:00.0825997
+Function Value: 777.6,561.6
+
+Iteration 45
+
+Time to get parameters: 00:00:00.0192887
+Parameters to evaluate: 0.7,7
+Time to get function value: 00:00:00.0855987
+Function Value: 1440.6,872.2
+
+Iteration 46
+
+Time to get parameters: 00:00:00.0189367
+Parameters to evaluate: 0.7,8
+Time to get function value: 00:00:00.0969967
+Function Value: 2457.6,1280
+
+Iteration 47
+
+Time to get parameters: 00:00:00.0247317
+Parameters to evaluate: 0.7,9
+Time to get function value: 00:00:00.1373140
+Function Value: 3936.6,1798.2
+
+Iteration 48
+
+Time to get parameters: 00:00:00.0193880
+Parameters to evaluate: 0.7,10
+Time to get function value: 00:00:00.1155081
+Function Value: 6000,2440
+
+Iteration 49
+
+Time to get parameters: 00:00:00.0369065
+Parameters to evaluate: 0.8,5
+Time to get function value: 00:00:00.0915076
+Function Value: 375,335
+
+Iteration 50
+
+Time to get parameters: 00:00:00.0252451
+Parameters to evaluate: 0.8,6
+Time to get function value: 00:00:00.0882367
+Function Value: 777.6,561.6
+
+Iteration 51
+
+Time to get parameters: 00:00:00.0273234
+Parameters to evaluate: 0.8,7
+Time to get function value: 00:00:00.0847986
+Function Value: 1440.6,872.2
+
+Iteration 52
+
+Time to get parameters: 00:00:00.0163788
+Parameters to evaluate: 0.8,8
+Time to get function value: 00:00:00.0916495
+Function Value: 2457.6,1280
+
+Iteration 53
+
+Time to get parameters: 00:00:00.0201699
+Parameters to evaluate: 0.8,9
+Time to get function value: 00:00:00.0922376
+Function Value: 3936.6,1798.2
+
+Iteration 54
+
+Time to get parameters: 00:00:00.0175386
+Parameters to evaluate: 0.8,10
+Time to get function value: 00:00:00.0939891
+Function Value: 6000,2440
+
+Iteration 55
+
+Time to get parameters: 00:00:00.0198943
+Parameters to evaluate: 0.9,5
+Time to get function value: 00:00:00.0851089
+Function Value: 375,335
+
+Iteration 56
+
+Time to get parameters: 00:00:00.0191105
+Parameters to evaluate: 0.9,6
+Time to get function value: 00:00:00.0914693
+Function Value: 777.6,561.6
+
+Iteration 57
+
+Time to get parameters: 00:00:00.0230983
+Parameters to evaluate: 0.9,7
+Time to get function value: 00:00:00.1027933
+Function Value: 1440.6,872.2
+
+Iteration 58
+
+Time to get parameters: 00:00:00.0198378
+Parameters to evaluate: 0.9,8
+Time to get function value: 00:00:00.0934360
+Function Value: 2457.6,1280
+
+Iteration 59
+
+Time to get parameters: 00:00:00.0181029
+Parameters to evaluate: 0.9,9
+Time to get function value: 00:00:00.0958660
+Function Value: 3936.6,1798.2
+
+Iteration 60
+
+Time to get parameters: 00:00:00.0149452
+Parameters to evaluate: 0.9,10
+Time to get function value: 00:00:00.0841690
+Function Value: 6000,2440
+
+Iteration 61
+
+Time to get parameters: 00:00:00.0155457
+Parameters to evaluate: 1,5
+Time to get function value: 00:00:00.0853108
+Function Value: 375,335
+
+Iteration 62
+
+Time to get parameters: 00:00:00.0174574
+Parameters to evaluate: 1,6
+Time to get function value: 00:00:00.0762247
+Function Value: 777.6,561.6
+
+Iteration 63
+
+Time to get parameters: 00:00:00.0154955
+Parameters to evaluate: 1,7
+Time to get function value: 00:00:00.0881331
+Function Value: 1440.6,872.2
+
+Iteration 64
+
+Time to get parameters: 00:00:00.0151517
+Parameters to evaluate: 1,8
+Time to get function value: 00:00:00.0886337
+Function Value: 2457.6,1280
+
+Iteration 65
+
+Time to get parameters: 00:00:00.0163662
+Parameters to evaluate: 1,9
+Time to get function value: 00:00:00.0807724
+Function Value: 3936.6,1798.2
+
+Iteration 66
+
+Time to get parameters: 00:00:00.0165097
+Parameters to evaluate: 1,10
+Time to get function value: 00:00:00.1430514
+Function Value: 6000,2440
+
+Iteration Done
+Best Value: -∞
+
+Total time: 00:00:11.5616743
+Best Value: -∞
+Best Parameters: 
+Iteration Done
+Best Value: -∞
+
+Total time: 00:00:11.5616743
+Best Value: -∞
+Best Parameters: 
+Settings
+Brute Force
+
+Iteration 1
+
+Time to get parameters: 00:00:00.0568844
+Parameters to evaluate: 0,5
+Time to get function value: 00:00:00.6762172
+Function Value: 375,335
+
+Iteration 2
+
+Time to get parameters: 00:00:00.0183955
+Parameters to evaluate: 0,6
+Time to get function value: 00:00:00.3488797
+Function Value: 777.6,561.6
+
+Iteration 3
+
+Time to get parameters: 00:00:00.0179886
+Parameters to evaluate: 0,7
+Time to get function value: 00:00:00.4371421
+Function Value: 1440.6,872.2
+
+Iteration 4
+
+Time to get parameters: 00:00:00.0184940
+Parameters to evaluate: 0,8
+Time to get function value: 00:00:00.3844543
+Function Value: 2457.6,1280
+
+Iteration 5
+
+Time to get parameters: 00:00:00.0163547
+Parameters to evaluate: 0,9
+Time to get function value: 00:00:00.3335028
+Function Value: 3936.6,1798.2
+
+Iteration 6
+
+Time to get parameters: 00:00:00.0152200
+Parameters to evaluate: 0,10
+Time to get function value: 00:00:00.3367899
+Function Value: 6000,2440
+
+Iteration 7
+
+Time to get parameters: 00:00:00.0167347
+Parameters to evaluate: 0.1,5
+Time to get function value: 00:00:00.3388225
+Function Value: 375,335
+
+Iteration 8
+
+Time to get parameters: 00:00:00.0181845
+Parameters to evaluate: 0.1,6
+Time to get function value: 00:00:00.3305851
+Function Value: 777.6,561.6
+
+Iteration 9
+
+Time to get parameters: 00:00:00.0189449
+Parameters to evaluate: 0.1,7
+Time to get function value: 00:00:00.3601061
+Function Value: 1440.6,872.2
+
+Iteration 10
+
+Time to get parameters: 00:00:00.0193835
+Parameters to evaluate: 0.1,8
+Time to get function value: 00:00:00.3499087
+Function Value: 2457.6,1280
+
+Iteration 11
+
+Time to get parameters: 00:00:00.0176805
+Parameters to evaluate: 0.1,9
+Time to get function value: 00:00:00.3759569
+Function Value: 3936.6,1798.2
+
+Iteration 12
+
+Time to get parameters: 00:00:00.0155676
+Parameters to evaluate: 0.1,10
+Time to get function value: 00:00:00.3334468
+Function Value: 6000,2440
+
+Iteration 13
+
+Time to get parameters: 00:00:00.0180247
+Parameters to evaluate: 0.2,5
+Time to get function value: 00:00:00.3341296
+Function Value: 375,335
+
+Iteration 14
+
+Time to get parameters: 00:00:00.0168721
+Parameters to evaluate: 0.2,6
+Time to get function value: 00:00:00.3363979
+Function Value: 777.6,561.6
+
+Iteration 15
+
+Time to get parameters: 00:00:00.0177492
+Parameters to evaluate: 0.2,7
+Time to get function value: 00:00:00.3337569
+Function Value: 1440.6,872.2
+
+Iteration 16
+
+Time to get parameters: 00:00:00.0172244
+Parameters to evaluate: 0.2,8
+Time to get function value: 00:00:00.3548029
+Function Value: 2457.6,1280
+
+Iteration 17
+
+Time to get parameters: 00:00:00.0221982
+Parameters to evaluate: 0.2,9
+Time to get function value: 00:00:00.3391050
+Function Value: 3936.6,1798.2
+
+Iteration 18
+
+Time to get parameters: 00:00:00.0200151
+Parameters to evaluate: 0.2,10
+Time to get function value: 00:00:00.3487904
+Function Value: 6000,2440
+
+Iteration 19
+
+Time to get parameters: 00:00:00.0201747
+Parameters to evaluate: 0.3,5
+Time to get function value: 00:00:00.3555803
+Function Value: 375,335
+
+Iteration 20
+
+Time to get parameters: 00:00:00.0214529
+Parameters to evaluate: 0.3,6
+Time to get function value: 00:00:00.3338989
+Function Value: 777.6,561.6
+
+Iteration 21
+
+Time to get parameters: 00:00:00.0296704
+Parameters to evaluate: 0.3,7
+Time to get function value: 00:00:00.3701384
+Function Value: 1440.6,872.2
+
+Iteration 22
+
+Time to get parameters: 00:00:00.0200339
+Parameters to evaluate: 0.3,8
+Time to get function value: 00:00:00.3500310
+Function Value: 2457.6,1280
+
+Iteration 23
+
+Time to get parameters: 00:00:00.0202627
+Parameters to evaluate: 0.3,9
+Time to get function value: 00:00:00.4136513
+Function Value: 3936.6,1798.2
+
+Iteration 24
+
+Time to get parameters: 00:00:00.0294210
+Parameters to evaluate: 0.3,10
+Time to get function value: 00:00:00.4036929
+Function Value: 6000,2440
+
+Iteration 25
+
+Time to get parameters: 00:00:00.0216305
+Parameters to evaluate: 0.4,5
+Time to get function value: 00:00:00.3461790
+Function Value: 375,335
+
+Iteration 26
+
+Time to get parameters: 00:00:00.0165831
+Parameters to evaluate: 0.4,6
+Time to get function value: 00:00:00.3645541
+Function Value: 777.6,561.6
+
+Iteration 27
+
+Time to get parameters: 00:00:00.0171386
+Parameters to evaluate: 0.4,7
+Time to get function value: 00:00:00.3563796
+Function Value: 1440.6,872.2
+
+Iteration 28
+
+Time to get parameters: 00:00:00.0192792
+Parameters to evaluate: 0.4,8
+Time to get function value: 00:00:00.3453596
+Function Value: 2457.6,1280
+
+Iteration 29
+
+Time to get parameters: 00:00:00.0204594
+Parameters to evaluate: 0.4,9
+Time to get function value: 00:00:00.3529056
+Function Value: 3936.6,1798.2
+
+Iteration 30
+
+Time to get parameters: 00:00:00.0182124
+Parameters to evaluate: 0.4,10
+Time to get function value: 00:00:00.3913656
+Function Value: 6000,2440
+
+Iteration 31
+
+Time to get parameters: 00:00:00.0272718
+Parameters to evaluate: 0.5,5
+Time to get function value: 00:00:00.3419547
+Function Value: 375,335
+
+Iteration 32
+
+Time to get parameters: 00:00:00.0195660
+Parameters to evaluate: 0.5,6
+Time to get function value: 00:00:00.3239118
+Function Value: 777.6,561.6
+
+Iteration 33
+
+Time to get parameters: 00:00:00.0216304
+Parameters to evaluate: 0.5,7
+Time to get function value: 00:00:00.3316743
+Function Value: 1440.6,872.2
+
+Iteration 34
+
+Time to get parameters: 00:00:00.0173513
+Parameters to evaluate: 0.5,8
+Time to get function value: 00:00:00.3292854
+Function Value: 2457.6,1280
+
+Iteration 35
+
+Time to get parameters: 00:00:00.0186878
+Parameters to evaluate: 0.5,9
+Time to get function value: 00:00:00.3443500
+Function Value: 3936.6,1798.2
+
+Iteration 36
+
+Time to get parameters: 00:00:00.0180433
+Parameters to evaluate: 0.5,10
+Time to get function value: 00:00:00.3427102
+Function Value: 6000,2440
+
+Iteration 37
+
+Time to get parameters: 00:00:00.0172849
+Parameters to evaluate: 0.6,5
+Time to get function value: 00:00:00.3249689
+Function Value: 375,335
+
+Iteration 38
+
+Time to get parameters: 00:00:00.0177220
+Parameters to evaluate: 0.6,6
+Time to get function value: 00:00:00.3237893
+Function Value: 777.6,561.6
+
+Iteration 39
+
+Time to get parameters: 00:00:00.0225932
+Parameters to evaluate: 0.6,7
+Time to get function value: 00:00:00.3419407
+Function Value: 1440.6,872.2
+
+Iteration 40
+
+Time to get parameters: 00:00:00.0185598
+Parameters to evaluate: 0.6,8
+Time to get function value: 00:00:00.3470095
+Function Value: 2457.6,1280
+
+Iteration 41
+
+Time to get parameters: 00:00:00.0208989
+Parameters to evaluate: 0.6,9
+Time to get function value: 00:00:00.3242068
+Function Value: 3936.6,1798.2
+
+Iteration 42
+
+Time to get parameters: 00:00:00.0196268
+Parameters to evaluate: 0.6,10
+Time to get function value: 00:00:00.3451981
+Function Value: 6000,2440
+
+Iteration 43
+
+Time to get parameters: 00:00:00.0184251
+Parameters to evaluate: 0.7,5
+Time to get function value: 00:00:00.3338340
+Function Value: 375,335
+
+Iteration 44
+
+Time to get parameters: 00:00:00.0169872
+Parameters to evaluate: 0.7,6
+Time to get function value: 00:00:00.3451662
+Function Value: 777.6,561.6
+
+Iteration 45
+
+Time to get parameters: 00:00:00.0257377
+Parameters to evaluate: 0.7,7
+Time to get function value: 00:00:00.3593532
+Function Value: 1440.6,872.2
+
+Iteration 46
+
+Time to get parameters: 00:00:00.0171489
+Parameters to evaluate: 0.7,8
+Time to get function value: 00:00:00.3409144
+Function Value: 2457.6,1280
+
+Iteration 47
+
+Time to get parameters: 00:00:00.0239408
+Parameters to evaluate: 0.7,9
+Time to get function value: 00:00:00.3408317
+Function Value: 3936.6,1798.2
+
+Iteration 48
+
+Time to get parameters: 00:00:00.0170858
+Parameters to evaluate: 0.7,10
+Time to get function value: 00:00:00.3364784
+Function Value: 6000,2440
+
+Iteration 49
+
+Time to get parameters: 00:00:00.0197098
+Parameters to evaluate: 0.8,5
+Time to get function value: 00:00:00.3577970
+Function Value: 375,335
+
+Iteration 50
+
+Time to get parameters: 00:00:00.0234201
+Parameters to evaluate: 0.8,6
+Time to get function value: 00:00:00.3475169
+Function Value: 777.6,561.6
+
+Iteration 51
+
+Time to get parameters: 00:00:00.0202096
+Parameters to evaluate: 0.8,7
+Time to get function value: 00:00:00.3466927
+Function Value: 1440.6,872.2
+
+Iteration 52
+
+Time to get parameters: 00:00:00.0178899
+Parameters to evaluate: 0.8,8
+Time to get function value: 00:00:00.3407448
+Function Value: 2457.6,1280
+
+Iteration 53
+
+Time to get parameters: 00:00:00.0216979
+Parameters to evaluate: 0.8,9
+Time to get function value: 00:00:00.3488176
+Function Value: 3936.6,1798.2
+
+Iteration 54
+
+Time to get parameters: 00:00:00.0202527
+Parameters to evaluate: 0.8,10
+Time to get function value: 00:00:00.3369354
+Function Value: 6000,2440
+
+Iteration 55
+
+Time to get parameters: 00:00:00.0169703
+Parameters to evaluate: 0.9,5
+Time to get function value: 00:00:00.3520787
+Function Value: 375,335
+
+Iteration 56
+
+Time to get parameters: 00:00:00.0198448
+Parameters to evaluate: 0.9,6
+Time to get function value: 00:00:00.3571482
+Function Value: 777.6,561.6
+
+Iteration 57
+
+Time to get parameters: 00:00:00.0209136
+Parameters to evaluate: 0.9,7
+Time to get function value: 00:00:00.3533879
+Function Value: 1440.6,872.2
+
+Iteration 58
+
+Time to get parameters: 00:00:00.0222339
+Parameters to evaluate: 0.9,8
+Time to get function value: 00:00:00.3442385
+Function Value: 2457.6,1280
+
+Iteration 59
+
+Time to get parameters: 00:00:00.0297658
+Parameters to evaluate: 0.9,9
+Time to get function value: 00:00:00.3786834
+Function Value: 3936.6,1798.2
+
+Iteration 60
+
+Time to get parameters: 00:00:00.0225166
+Parameters to evaluate: 0.9,10
+Time to get function value: 00:00:00.3638117
+Function Value: 6000,2440
+
+Iteration 61
+
+Time to get parameters: 00:00:00.0224064
+Parameters to evaluate: 1,5
+Time to get function value: 00:00:00.4348513
+Function Value: 375,335
+
+Iteration 62
+
+Time to get parameters: 00:00:00.0308529
+Parameters to evaluate: 1,6
+Time to get function value: 00:00:00.3413082
+Function Value: 777.6,561.6
+
+Iteration 63
+
+Time to get parameters: 00:00:00.0175954
+Parameters to evaluate: 1,7
+Time to get function value: 00:00:00.3158665
+Function Value: 1440.6,872.2
+
+Iteration 64
+
+Time to get parameters: 00:00:00.0177230
+Parameters to evaluate: 1,8
+Time to get function value: 00:00:00.3277714
+Function Value: 2457.6,1280
+
+Iteration 65
+
+Time to get parameters: 00:00:00.0211294
+Parameters to evaluate: 1,9
+Time to get function value: 00:00:00.3294447
+Function Value: 3936.6,1798.2
+
+Iteration 66
+
+Time to get parameters: 00:00:00.0197219
+Parameters to evaluate: 1,10
+Time to get function value: 00:00:00.3138608
+Function Value: 6000,2440
+
+Iteration Done
+Best Value: -∞
+
+Total time: 00:00:29.9832348
+Best Value: -∞
+Best Parameters: 
+Iteration Done
+Best Value: -∞
+
+Total time: 00:00:29.9832348
+Best Value: -∞
+Best Parameters: 
