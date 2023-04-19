@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Waterfront Tanjong Pagar</title>
+  
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+  
+</head>
+<body>
+  <style>
+
+    body {
+        margin: 0;
+    }
+    /*-----CSS style for the layer and view selection widget-----*/
+    #layer-menu {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        width: 160px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    #camera-menu {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 50px;
+        width: 80px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    #function-menu {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 140px;
+        width: 140px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .dropbtn {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        background-color: #31b7bc; /*AIT colors*/;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+        font-weight: 500;
+    }
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #22a1a1;
+    }
+    .dropdown-content {
+        border-radius: 5px;
+        text-align: left;
+        display: none;
+        position: absolute;
+        top: 55px;
+        background-color: #ffffff;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border-top: 1px solid #ddd;
+    }
+    .dropdown-content a.Off {
+        color: #6b6b6b;
+        background: #f9f9f9;
+    }
+    .dropdown-content a:hover {background-color: rgb(240, 240, 240);}
+
+    .show {display: block;}  
+
+    /*-----CSS style for the element info popup widget-----*/
+    dd {
+        margin-left: 0;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    dt {
+        color: #31b7bc; /*AIT colors*/
+    }
+    dl {
+        margin-bottom: 0;
+    }
+    .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+        border-top-color: #31b7bc; /*AIT colors*/
+    }
+    .mapboxgl-popup-content{
+        font-size: 14px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 0px 2px #31b7bc; /*AIT colors*/
+        min-width: 120px;
+        max-width: 300px;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+    .mapboxgl-popup-close-button{
+        color: white;
+        font-size: 20px;
+    }
+
+    /*-----CSS style for the map scale widget-----*/
+    .mapboxgl-ctrl-scale {
+        background-color: rgba(0, 0, 0, 0.75);
+        font-size: 12px;
+        border-width: medium 2px 3px;
+        border-style: none none solid;
+        border-color: #31b7bc; /*AIT colors*/
+        padding: 0 5px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    /*-----CSS style for copyright-----*/
+    #copyright {
+        font-size: 9px;
+        color:white;
+        text-align: center;
+    }
+    #copyright a {
+        color:#31b7bc; /*AIT colors*/
+        text-decoration: none;
+        font-weight: 1000;
+    }
+  </style>
+
+  <div id='map' style='min-height: 100vh; min-width: 460px; margin: 0;'> <!-- MapBox container -->
+        <nav id="layer-menu">
+            <button onclick="dropdownToggle('layerDropdown')" class="dropbtn">
+                Select scenario</button>
+            <div id="layerDropdown" class="dropdown-content"></div>
+            <div id = "copyright">created at <a target="_blank" 
+                href="https://cities.ait.ac.at/site/">AIT</a>
+                 by Ondrej Vesely,  2018</div>
+        </nav>
+        <nav id="camera-menu">
+            <button onclick="dropdownToggle('cameraDropdown')" class="dropbtn">
+                Views</button>
+            <div id="cameraDropdown" class="dropdown-content"></div>
+        </nav>
+        <nav id="function-menu">
+            <button onclick="dropdownToggle('functionDropdown')" class="dropbtn">
+                Functions</button>
+            <div id="functionDropdown" class="dropdown-content"></div>
+        </nav>
+  </div>
+
+  <script>
+
+    // Load Map via Mapbox API
+    mapboxgl.accessToken = 'pk.eyJ1Ijoib25kcmVqLXZlc2VseSIsImEiOiJjamlhOWo3cnkwMnY3M3ZwZjU5bm54c3BsIn0.69pwP4aK4CmFBlpU8I4giw';
+    // MAPBOX PUBLIC ACCESS TOKEN ^^
+    // dont forget to change this accessToken to you own
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/ondrej-vesely/cjjsritez0dx42ro0vz8l2ks4'
+    });
+
+    // Camera limits
+    map.setMaxZoom(17);
+
+    // Add navigation widget
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav,'top-right');
+
+    // Add fullscreen toggle button widget
+    var full = new mapboxgl.FullscreenControl();
+    map.addControl(full, 'top-right')
+
+    // Add map scale widget
+    var scale = new mapboxgl.ScaleControl({
+    maxWidth: 250,
+    unit: 'metric'
+    });
+    map.addControl(scale, 'bottom-right');
+
+    // On start wait till map loads,
+    map.on('load', function() {
+        // move camera a bit,
+        map.flyTo({center: [103.84, 1.2680], zoom: 13.8, speed: 0.1, bearing: 4})
+        // and open welcome popup
+        helpPopup()
+    });
+    
+
+    //   --- The interesting stuff starts here ----
+
+    // Dropdowns
+    // When the user clicks on the button, 
+    // toggle between hiding and showing the dropdown content
+    function dropdownToggle(id) {
+        document.getElementById(id).classList.toggle("show");
+    }
+    // Layers which include multiple variants and should filtered based on displayed scenario
+    var scenLayers = [
+        'land', 'land2', 'buildings', 'streets', 'trees', 'bridges', 'floors', 'syntax',
+        'solar'
+        ]
+
+    // List of variants included in the data
+    var scenNames = ['scen1', 'scen3', 'scen5']
+    var scenNiceNames = ['Green Loop City', 'Garden City', 'Oceanfront']
+
+    // Add scenario names to dropdown to chenge scenario filter on click
+    for (var i = 0; i < scenNames.length; i++) {
+        var id = scenNames[i];
+        var name = scenNiceNames[i];
+        var link = document.createElement('a');
+            link.href = 'javascript:changeScen("' + id + '")';
+            link.textContent = name;
+            var $layerDropdown = document.getElementById('layerDropdown');
+            $layerDropdown.appendChild(link);
+    }
+    // Scenario change - Loops trough list of scenario layers,
+    // sets variant filter to given scenario name
+    function changeScen(id) {
+        for (var i = 0; i < scenLayers.length; i++) {
+            var layer = scenLayers[i];
+            filter = map.getFilter(layer); // gets current filter settings
+            for (var j = 0; j < filter.length; j++) {
+                if (filter[j][1] == "var") { // Key under which you specify variants
+                    filter[j][2] = id; // change the Value to "id" (scenario name)
+                }
+            }
+            map.setFilter(layer, filter);
+        }
+    }
+
+    // For the cameras you want to save, put its position as CameraOptions here
+    var cameras = [
+        {center: [103.836607, 1.272156], zoom: 17, bearing: 136, pitch: 60}, 
+        {center: [103.846564, 1.272998], zoom: 16, bearing: -180, pitch: 60}, 
+        {center: [103.832839, 1.259721], zoom: 15, bearing: 0, pitch: 0}];
+    var cameraNames = ['Station', 'CBD', 'Island']
+
+    // Add views to camera dropdown to switch cameras on click
+    for (var i = 0; i < cameras.length; i++) {
+        var name = cameraNames[i]
+        var link = document.createElement('a');
+            link.href = 'javascript:changeCamera(cameras[' + i + '])';
+            link.textContent = name;
+            var $cameraDropdown = document.getElementById('cameraDropdown');
+            $cameraDropdown.appendChild(link);
+    }
+    // View switching
+    function changeCamera(cameraOptions){
+        // You can set camera fly speed here
+        cameraOptions['speed'] = '0.5';
+        map.flyTo(cameraOptions);
+    }
+
+        
+    // List of additional functions you want to include as tools
+    var functions = [
+        'toggle3d()', 'toggleFloors()', 'toggleSun()',
+        'toggleSyntax()', 'issues()', 'helpPopup()'
+        ]
+    var functionNames = [
+        '☑  3D buildings', '☐  Higher LOD', '☐  Shadow study',
+        '☐  SpaceSyntax', '☐  Comments', 'Need Help?'
+        ]
+    var startToggle = ['On', 'Off', 'Off', 'Off', 'Off', 'On']
+    // Add functions to dropdown to switch activate on click
+    for (var i = 0; i < functions.length; i++) {
+        var id = functions[i];
+        var name = functionNames[i];
+        var toggle = startToggle[i]
+        var link = document.createElement('a');
+            link.href = 'javascript:' + id
+            link.textContent = name;
+            link.id = id
+            link.classList = toggle
+            var $layerDropdown = document.getElementById('functionDropdown');
+            $layerDropdown.appendChild(link);
+    }
+    
+    // 3D buildings toggle
+    var extrusionHeight = []
+    map.on("load", function(){
+        extrusionHeight = map.getPaintProperty("buildings", "fill-extrusion-height")
+    })
+    function toggle3d(){
+        // toggle off
+        if(document.getElementById("toggle3d()").classList == "On") {
+            map.setPaintProperty("buildings", "fill-extrusion-height", 8)
+            map.setPaintProperty('floors', "fill-extrusion-opacity", 0);
+            document.getElementById("toggle3d()").textContent = "☐  3D buildings"
+            document.getElementById("toggle3d()").classList = "Off"
+        }
+        // toggle on
+        else if(document.getElementById("toggle3d()").classList == "Off") {
+            map.setPaintProperty("buildings", "fill-extrusion-height", extrusionHeight)
+            map.setPaintProperty('floors', "fill-extrusion-opacity", 1);
+            document.getElementById("toggle3d()").textContent = "☑  3D buildings"
+            document.getElementById("toggle3d()").classList = "On"
+        }
+    }
+
+    // Higher LOD -- Floors toggle
+    function toggleFloors() {
+        // toggle on
+        if(document.getElementById("toggleFloors()").classList == "Off") {
+            // First check if map isnt zoomed out too far
+            // If map is far, zoom slowly to proper zoom level
+            if(map.getZoom() < 15) {
+                map.flyTo({zoom: 15, speed: 0.5})
+            }
+            else {
+                map.flyTo({zoom: map.getZoom()+0.0001})
+            }
+            map.once('zoomend', function() {
+                map.setMinZoom(15)
+                map.setPaintProperty("buildings", "fill-extrusion-opacity", 0)
+                map.setLayoutProperty('floors', 'visibility', 'visible');
+                document.getElementById("toggleFloors()").textContent = "☑  Higher LOD"
+                document.getElementById("toggleFloors()").classList = "On"
+            })
+        }
+        // toggle off
+        else if(document.getElementById("toggleFloors()").classList == "On") {
+            map.setLayoutProperty('floors', 'visibility', 'none');
+            map.setPaintProperty("buildings", "fill-extrusion-opacity", 1)
+            document.getElementById("toggleFloors()").textContent = "☐  Higher LOD"
+            document.getElementById("toggleFloors()").classList = "Off"
+            map.setMinZoom(0)
+        }
+    }
+    // Toggle Sun hours / Shadowstudy
+    // Toggle on
+    function toggleSun(){
+        if(document.getElementById("toggleSun()").classList == "Off") {
+            map.setLayoutProperty('solar', "visibility", "visible");
+            document.getElementById("toggleSun()").textContent = "☑  Shadow study"
+            document.getElementById("toggleSun()").classList = "On"
+            
+            // show data in popup on mouse hover
+            var popup = new mapboxgl.Popup({closeButton: false, closeOnClick: false})
+            map.on('mousemove', 'solar', function(e) {
+                map.getCanvas().style.cursor = 'help';
+                popup.remove(map)
+                var features = map.queryRenderedFeatures(e.point, {layers: ["solar"]});
+                var face = features[0];
+                var hours = face.properties.hours
+                popup.setLngLat(e.lngLat)
+                    .setHTML(
+                    '<dd>' + hours + ' hours</dd>' +
+                    '<dt> of sunlight <br>on 1st of August.</dt>'
+                    )
+                    .addTo(map);
+            })
+            // close popup when hover ends
+            map.on('mouseleave', 'solar', function(){
+                map.getCanvas().style.cursor = '';
+                popup.remove(map);
+            })
+        }
+        // toggle off
+        else if(document.getElementById("toggleSun()").classList == "On") {
+            map.setLayoutProperty('solar', "visibility", "none");
+            document.getElementById("toggleSun()").textContent = "☐  Shadow study"
+            document.getElementById("toggleSun()").classList = "Off"
+        }
+    }
+
+    // Toggle SpaceSyntax
+    function toggleSyntax(){
+        // togle on
+        if(document.getElementById("toggleSyntax()").classList == "Off") {
+            map.setPaintProperty('syntax', "line-opacity", 1);
+            document.getElementById("toggleSyntax()").textContent = "☑  SpaceSyntax"
+            document.getElementById("toggleSyntax()").classList = "On"
+        }
+        // toggle off
+        else if(document.getElementById("toggleSyntax()").classList == "On") {
+            map.setPaintProperty('syntax', "line-opacity", 0);
+            document.getElementById("toggleSyntax()").textContent = "☐  SpaceSyntax"
+            document.getElementById("toggleSyntax()").classList = "Off"
+        }
+    }
+
+    // Feedback toggle
+    // Switch between icons visible and hidden
+    function issues() {
+        // toggle on
+        if(document.getElementById("issues()").classList == "Off") {
+            map.setLayoutProperty("wtp-comments", 'visibility', 'visible');
+            document.getElementById("issues()").textContent = "☑  Comments"
+            document.getElementById("issues()").classList = "On"
+        }
+        // toggle off
+        else if(document.getElementById("issues()").classList == "On") {
+            map.setLayoutProperty("wtp-comments", 'visibility', 'none');
+            document.getElementById("issues()").textContent = "☐  Comments"
+            document.getElementById("issues()").classList = "Off"
+        }
+    }
+    // on hover open popup with text info
+    issuePopup = new mapboxgl.Popup({closeButton: false, closeOnClick: false})
+    map.on('mouseenter', 'wtp-comments', function(e) {
+        map.getCanvas().style.cursor = 'pointer';
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var text = e.features[0].properties.text;
+        var author = e.features[0].properties.author;
+            issuePopup.setLngLat(coordinates)
+                    .setHTML('<dt>' + text + '</dt>' +
+                    '<br><dd>' + author + '</dd>'
+                    )
+                    .addTo(map);
+    })
+    // close it on hover end
+    map.on('mouseleave', 'wtp-comments', function() {
+        map.getCanvas().style.cursor = '';
+        issuePopup.remove();
+    })
+
+
+    // +++  Other useful functions
+
+    // Help popup with control instructions
+    function helpPopup() {
+        window.popup = new mapboxgl.Popup()
+            .setLngLat(map.getCenter())
+            .setHTML(   //OLD IE COMPATABLE MUTLILINE STRING
+                '<dd>How can you explore the model?</dd>' +
+                '<dt>Click on "Select scenario" to choose between different variants' +
+                ' or click on buildings to display more information about them.</dt>' +
+                '<dt><br>To control the camera press Control + Left Mouse Button or use' +
+                ' one of the preset positions with "Views" menu.</dt>' +
+                '<dt><br>In the "Functions" menu you can hide the 3D geometry' +
+                ' and change the Level of Detail or show a demo of feedback system.</dt>'
+            )
+            .addTo(map);
+    }
+
+    // And to display object properties of some layer on click...
+    // Layer with additional data popup on click
+    activeLayer = 'buildings'
+    // change the cursor when hovering over this layer
+    map.on('mouseenter', activeLayer, function(event) {
+        map.getCanvas().style.cursor = 'help';
+    }); 
+    map.on('mouseleave', activeLayer, function() {
+        map.getCanvas().style.cursor = '';
+    });
+    // Open popup with GeoJson properties on click
+    map.on('click', function(event) {
+        var features = map.queryRenderedFeatures(event.point, {layers: [activeLayer]});
+        var building = features[0];
+        
+        // Keys from properties you want to include
+        if (features.length) {
+            var landUse = building.properties.function || '–';
+            var height = Math.round(building.properties.height) || '–';
+            var gfa = Math.round(building.properties.GFA) || '–';
+            var id = building.properties.build_ID || '–';
+            
+            // HTML content of the popup
+            window.popup = new mapboxgl.Popup()
+                .setLngLat(event.lngLat)
+                .setHTML( 
+                    '<dl>' +
+                    // '<dt>Land Use</dt>' +
+                    // '<dd>' + landUse + '</dd>' +
+                    '<dt>Building Height</dt>' +
+                    '<dd>' + height + ' m' + '</dd>' +
+                    '<dt>GFA</dt>' +
+                    '<dd>' + gfa + ' sqm' + '</dd>' +
+                    '<dt>ID#</dt>' +
+                    '<dd>' + id + '</dd>' +
+                    '</dl>')   //THIS IS OLD IE COMPATABLE MUTLILINE STRING FORMAT
+                .addTo(map);
+        };
+    });
+
+
+  </script>
+
+</body>
+</html>
